@@ -1,0 +1,49 @@
+/* div {
+    border: 1px solid #ff3fb5;
+} */
+
+.container{
+    width: 950px;
+    background-color: silver;
+    margin: 0px auto;
+    /* my changes */
+    padding: 15px;
+}
+.top-nav {
+    height: 150px;
+    background-color: green;
+    /* my changes */
+    margin-bottom: 15px;
+}
+.side-nav {
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+    /* my changes */
+    display: inline-block;
+    margin-right: 15px;
+}
+.main {
+    height: 400px;
+    width: 700px;
+    background-color: red;
+    /* my changes */
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px;
+}
+.sub-content {
+    height: 200px;
+    width: 210px;
+    background-color: yellow;
+    /* my changes */
+    display: inline-block;
+    margin-right: 11px;
+}
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: purple;
+    /* my changes */
+    margin-top: 20px;
+}

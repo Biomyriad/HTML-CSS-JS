@@ -1,0 +1,23 @@
+div.row div {
+    color: white;
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}

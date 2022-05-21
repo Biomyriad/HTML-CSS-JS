@@ -1,0 +1,81 @@
+.card_container {
+    position: fixed;
+    top: 50px;
+    left: 150px;
+
+    width: 800px;
+    font-size: 17pt;
+    margin-top: -106px;
+}
+
+.card_container-2 {
+    position: fixed;
+    top: 230px;
+    left: 600px;
+
+    width: 800px;
+    font-size: 17pt;
+    margin-top: -106px;
+}
+
+.card_banner {
+    background-color: darkturquoise;
+    height: 100px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card_info_container {
+    background-color: white;
+    border: 5px solid grey;
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    padding: 25px;
+}
+
+.card_info_profile_pic_border {
+    position: relative;
+    top: 155px;
+    left: 30px;
+
+    width: 112px;
+    height: 112px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.card_info_profile_pic {
+    margin: auto;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card_info_name {
+    margin-top: 25px;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.card_info_location {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.card_info_location img {
+    width: 15px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.card_info_edit {
+    margin-top: 15px;
+}
+
+.card_info_edit img {
+    width: 25px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
