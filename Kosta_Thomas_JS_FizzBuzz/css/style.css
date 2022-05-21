@@ -1,0 +1,175 @@
+/* 
+CSS Table of contents
+-------------------------
+1 Vars
+2 Page Container
+3 Nav
+
+- Templates
+0    Button(s)   
+
+*/
+
+
+/* Vars */
+:root {
+    --font-size-heading: 28px;
+    --font-size-subheading-l: 26px;
+    --font-size-subheading: 20px;
+    --font-size-standard: 16px;
+
+    --nav-height: 60px;
+    --page-container-width: 900px;
+    
+    --common-section-border: 3px solid black;
+    --test-border-red: 1px solid red;
+    --test-border-green: 1px solid #00ff00;
+
+    --std-padding: 15px;
+    --std-margin: 15px;
+}
+
+body {
+    background-color: bisque;
+}
+
+/* Page Container */
+
+.page-container {
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+/* Nav */
+nav {
+    color: white;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    font-size: var(--font-size-heading);
+}
+
+nav > p {
+    line-height: 50px;
+    /* margin-left: var(--std-margin); */
+    margin: 0 auto;
+}
+
+/* Page Heading */
+
+.page-heading {
+    height: 25px;
+    width: 50%;
+    line-height: 25px;
+    text-align: center;
+    font-size: var(--font-size-subheading-l);
+    margin: var(--std-margin) auto;
+    padding-bottom: 35px;
+    border-bottom: 3px solid black;
+}
+
+/* Content Container (Left & Right Columns) */
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--std-margin);
+}
+
+/* .col {
+
+} */
+
+.col-left {
+    margin-right: var(--std-margin);
+    flex: 1.8;
+}
+
+.col-right {
+    flex: 1;
+}
+
+
+/* Challenge Description*/
+
+.content-description .col > p:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.content-description {
+    background-color: #ffddb3;
+    border: 3px solid #ffc680;
+    padding:var(--std-padding);
+    border-radius: 7px;
+}
+
+.challenge-disc {
+    background-color: #ffd199;
+    padding: var(--std-padding);
+    height: 274px;
+    border-radius: 4px;
+}
+
+.challenge-disc ul{
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+pre.challenge-example-output,
+pre.challenge-code,
+pre.challenge-output {
+    margin-top: 0;
+}
+
+pre.challenge-output {
+    height: 545px;
+}
+
+code[class*="language-"].challenge-code,
+pre[class*="language-"].challenge-code,
+code[class*="language-"].challenge-output,
+pre[class*="language-"].challenge-output {
+    font-size: 0.7em;
+}
+
+code[class*="language-"].challenge-example-output,
+pre[class*="language-"].challenge-example-output {
+    font-size: 0.7em;
+}
+
+/**** Templates *****/
+
+/* Standard Button */
+.std-button {
+    color: white;
+    background-color: #2b78e4;
+    font-size: var(--font-size-subheading);
+    min-width: 40px;
+    min-height: 25px;    
+    padding: 4px 10px 5px 10px;
+    border: var(--common-section-border);
+    box-shadow: 4px 4px black;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* PrismJs Code Viewer */
+
+.toolbar {
+    left: 0.2em;
+}
+
+.copy-to-clipboard-button {
+    height: 25px;
+    width: 50px;
+}
+
+/* change text size of prismJS viewer
+code[class*="language-"].uniquePreTagClass,
+pre[class*="language-"].uniquePreTagClass {
+    font-size: .5em;
+} */

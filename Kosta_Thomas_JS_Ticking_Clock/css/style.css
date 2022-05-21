@@ -1,0 +1,218 @@
+
+body {
+    background-color: darkcyan;
+    padding: 30px;
+}
+
+.clock.mid-time {
+    position: absolute;
+    transform: scale(25%); 
+    transform: skewY(100);
+}
+
+.clock {
+    background-color: #f3f3f3;
+    width: 300px;
+    height: 300px;
+    /* transform: scale(100%);  */
+    border-radius: 50%;
+    border: 6px solid black;
+    position: relative;
+    padding: 0;
+    /* transform: scale(4000%); */
+}
+
+.face {
+    width: 300px;
+    height: 300px;
+    top: -6px;
+    left: -6px;
+    border-radius: 50%;
+    border: 6px solid black;
+    position: relative;
+}
+
+.dot {
+    background-color: #000000;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 0, 0);
+    position: absolute;
+    margin: 0px;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+}
+
+.one-tick,
+.two-tick,
+.four-tick,
+.five-tick,
+.seven-tick,
+.eight-tick,
+.ten-tick,
+.eleven-tick {
+    position: absolute;
+    transform-origin: top center;
+}
+
+.one-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: -116px 0px 0px 66px;
+    transform-origin: top center;
+    transform: rotate(210deg);
+}
+
+.two-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: -67px 0px 0px 115px;
+    transform-origin: top center;
+    transform: rotate(240deg);
+}
+
+.four-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: 67px 0px 0px 115px;
+    transform-origin: top center;
+    transform: rotate(300deg);
+}
+
+.five-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: 116px 0px 0px 66px;
+    transform-origin: top center;
+    transform: rotate(330deg);
+}
+
+.seven-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: 117px 0px 0px -67px;
+    transform-origin: top center;
+    transform: rotate(30deg);
+}
+
+.eight-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: 68px 0px 0px -117px;
+    transform-origin: top center;
+    transform: rotate(60deg);
+}
+
+.ten-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: -67.6px 0px 0px -118px;
+    transform-origin: top center;
+    transform: rotate(120deg);
+}
+
+.eleven-tick {
+    background-color: red;
+    height: 10px;
+    width: 3px;
+    left: 50%;
+    top: 50%;
+    margin: -116.5px 0px 0px -68.3px;
+    transform-origin: top center;
+    transform: rotate(150deg);
+}
+
+.twelve,
+.six,
+.three,
+.nine {
+    position: absolute;
+    font-size: 30px;
+    /* background-color: rgba(0, 0, 255, 0.39); */
+    /* transform-origin: top center; */
+}
+
+.twelve {
+    font-weight: bold;
+    left: calc(50% - 15px);
+    /* top: calc(50% - 1px); */
+}
+
+.six {
+    font-weight: bold;
+    left: calc(50% - 7px);
+    top: calc(88% );
+}
+
+.three {
+    font-weight: bold;
+    left: calc(93.3%);
+    top: calc(50% - 16px);
+}
+
+.nine {
+    font-weight: bold;
+    left: calc(1.9%);
+    top: calc(50% - 16px);
+}
+
+#minutes,
+#hour,
+#seconds {
+    position: absolute;
+    transform-origin: top center;
+}
+
+#seconds {
+    background-color: red;
+    /* height: 130px; */
+    height: 140px;
+    width: 3px;
+    left: calc(50% - 1px);
+    top: 50%;
+    transform-origin: top center;
+    transform: rotate(150deg);
+}
+
+#hour {
+    background-color: black;
+    height: 100px;
+    width: 7px;
+    left: calc(50% - 3px);
+    top: 50%;
+    transform-origin: top center;
+    transform: rotate(240deg);
+}
+
+#minutes {
+    background-color: grey;
+    height: 120px;
+    width: 5px;
+    left: calc(50% - 2px);
+    top: 50%;
+    transform-origin: top center;
+    transform: rotate(240deg);
+}
+

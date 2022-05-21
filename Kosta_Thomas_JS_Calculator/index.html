@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/resets.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>4 Function Calculator</title>
+</head>
+<body>
+    <div id="calc-info">
+        <p>Movable 4 Function Calculator!!</p>
+        <ul>
+            <li>Please drag me!</li>
+            <li>Can't input all Zeros</li>
+            <li>Max input of 8 numbers</li>
+            <li>Can't select button text</li>
+            <li>Display will select all when clicked</li>
+            <li>Calculating large numbers does not overflow the display,</li>
+            <li> -- but will keep the number in memory</li>
+            <li>Two different methods of calculating the operation (in JS code)</li>
+            <li>Emulates a real calculator when hitting '=' more than once</li>
+            <li> -- Try: 2 + 1 = = = This will give all odd calculations</li>
+            <li>(Note: only the top bar is draggable, by design!)</li>
+        </ul>
+    </div>
+
+    <div id="calc" class="calc-window">
+        <div id="calcheader" class="window-bar">
+            <p>Drag me!</p>
+        </div>
+        <div id="calculator">
+            <div id="display">0</div>
+            <div class="row">
+                <button onclick="press(7);">7</button>
+                <button onclick="press(8);">8</button>
+                <button onclick="press(9);">9</button>
+                <button class="operator" onclick="setOP('/');">÷</button>
+            </div>
+            <div class="row">
+                <button onclick="press(4);">4</button>
+                <button onclick="press(5);">5</button>
+                <button onclick="press(6);">6</button>
+                <button class="operator" onclick="setOP('*');">×</button>
+            </div>
+            <div class="row">
+                <button onclick="press(1);">1</button>
+                <button onclick="press(2);">2</button>
+                <button onclick="press(3);">3</button>
+                <button class="operator" onclick="setOP('-');">−</button>
+            </div>
+            <div class="row">
+                <button onclick="clr();">C</button>
+                <button onclick="press(0);">0</button>
+                <button onclick="press('.');">.</button>
+                <button class="operator" onclick="setOP('+');">+</button>
+            </div>
+            <div class="row">
+                <button id="equals" onclick="calculate()">=</div>
+            </div>
+        <div>
+    </div>
+        <script src="./js/calc.js"></script>
+</body>
+</html>

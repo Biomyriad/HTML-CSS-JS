@@ -1,0 +1,175 @@
+/* 
+CSS Table of contents
+-------------------------
+
+
+1 Vars
+2 Page Container
+3 Nav
+0 Page Heading
+4 Content Container (Left & Right Columns)
+6 User Card (Left Column)
+5 Post Entry's (Right Column)
+
+- Templates
+0    Post Entry
+0    Button(s)    
+
+*/
+
+
+/* Vars */
+:root {
+    --font-size-heading: 28px;
+    --font-size-subheading: 20px;
+    --font-size-standard: 16px;
+
+    --nav-height: 60px;
+    --page-container-width: 900px;
+    
+    --common-section-border: 3px solid black;
+    --test-border-red: 1px solid red;
+    --test-border-green: 1px solid #00ff00;
+
+    --std-padding: 15px;
+    --std-margin: 15px;
+}
+
+/* Page Container */
+
+.page-container.pt1 {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.page-container {
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+/* Nav */
+nav {
+    color: white;
+    background-color: black;
+    height: 50px;
+    
+    font-size: var(--font-size-heading);
+}
+
+nav > p {
+    line-height: 50px;
+    margin-left: var(--std-margin);
+}
+
+/* Page Heading */
+
+.page-heading {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: var(--font-size-heading);
+    margin: var(--std-margin);
+}
+
+/* Content Container (Left & Right Columns) */
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-left {
+    margin-right: var(--std-margin);
+}
+
+.col-right {
+    flex: 1;
+}
+
+.col-right > div {
+    margin-bottom: var(--std-margin);
+}
+
+/* User Card */
+
+.user-card {
+    height: 200px;
+    width: 150px;
+    border: var(--common-section-border);
+    padding: var(--std-padding);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.user-card > * {
+    margin: 0 auto;
+    margin-bottom: var(--std-margin);
+}
+
+.user-card-avatar {
+    width: 85px;
+}
+
+.user-card-add-avatar {
+    
+}
+
+.user-card-username {
+    font-size: var(--font-size-subheading);
+}
+
+/**** Templates *****/
+
+/* Post Entry */
+
+.post-entry {
+    border: var(--common-section-border);
+    padding: var(--std-padding);
+    font-size: var(--font-size-standard);
+}
+
+.post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--std-margin);
+}
+
+.post-head div > *{
+    display: inline-block;
+}
+
+.post-username {
+    font-size: var(--font-size-subheading);
+    font-weight: bold;
+}
+
+.post-like-count {
+    font-weight: bold;
+}
+
+.std-button.post-like-btn {
+    height: 30px;
+    margin-left: var(--std-margin);
+    font-size: var(--font-size-standard);
+}
+
+
+/* Standard Button */
+.std-button {
+    color: white;
+    background-color: #2b78e4;
+    font-size: var(--font-size-subheading);
+    min-width: 40px;
+    min-height: 25px;    
+    padding: 4px 10px 5px 10px;
+    border: var(--common-section-border);
+    box-shadow: 4px 4px black;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

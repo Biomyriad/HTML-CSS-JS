@@ -1,0 +1,318 @@
+/* 
+--------------------------------
+** Page layout and CSS order **
+--------------------------------
+0 Body Tag
+1 Nav
+2 Page Content + right and left column
+3 Member Card
+4 Basic Card
+5 Connection Request Entry
+6 Current Connections Entry
+
+*/
+/* //////////////////////////////////////////////// */
+
+body {
+    background-color: #eeeeee;
+}
+
+/* Nav */
+.nav_container {
+    background-color: #333333;
+    padding-right: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 935px;
+    margin: 0 auto;
+    padding: 4px 20px;
+    color: white;
+    background-color: #333333;
+}
+
+.nav-title {
+    font-size: 25pt;
+    padding-bottom: 6px;
+    padding-right: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-links li {
+    padding: 8px;
+}
+
+.nav-links li a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+li a.active {
+    color: white;
+}
+
+.btn {
+    color: white;
+    background-color: #17a2b8;
+    font-size: 14pt;
+    font-weight: 300;
+    height: 35px;
+    margin-top: 10px;
+    padding: 2px 10px;
+    border: 3px solid black;
+    box-shadow: 4px 4px black;
+}
+
+/* Page Content right and left columns */
+
+.page_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 10px auto;
+    width: 950px;
+}
+
+.page_content > div {
+    margin: 10px;
+    margin-top: 25px;
+    
+}
+
+.page_left_Column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 550px;
+}
+
+.page_left_Column > div {
+    margin-bottom: 30px;
+}
+
+.page_right_Column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 300px;
+}
+
+.page_right_Column > div {
+    margin-bottom: 30px;
+}
+
+/* Member Card */
+
+.member_card_container {
+    font-size: 14pt;
+    /* margin-top fix for position relative issues */
+    margin-top: -112px;
+}
+
+.member_card_banner {
+    background-color: darkturquoise;
+    height: 100px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.member_card_info_container {
+    background-color: white;
+    border: 5px solid grey;
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    padding: 25px;
+}
+
+.member_card_info_profile_pic_border {
+    position: relative;
+    top: 155px;
+    left: 30px;
+
+    width: 112px;
+    height: 112px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.member_card_info_profile_pic {
+    margin: auto;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.member_card_info_name {
+    margin-top: 25px;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.member_card_info_location {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.member_card_info_location img {
+    width: 15px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.member_card_info_edit {
+    margin-top: 15px;
+}
+
+.member_card_info_edit img {
+    width: 25px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+/* Basic Card */
+
+.basic_card_container .basic_card_banner {
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.basic_card_container .basic_card_banner p{
+    display: inline-block;
+}
+
+.basic_card_container .basic_card_banner.count p:first-child {
+    min-width: 30px;
+    height: 30px;
+    padding: 2px 8px 0px;
+    border-radius: 50%;
+    background-color: #b1b1b1;
+    text-align: center;
+}
+
+.basic_card_container .basic_card_banner:not(.count) p:first-child {
+    padding-top: 2px;
+}
+
+.basic_card_container {
+    font-size: 17pt;
+    min-width: fit-content;
+}
+
+.basic_card_banner {
+    background-color: #555555;
+    min-height: 50px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.basic_card_content_container {
+    background-color: white;
+    border: 5px solid grey;
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15px;
+}
+
+.basic_card_view_more {
+    border-top: 5px solid grey;
+    margin: 0px -15px -5px;
+    padding-top: 5px;
+}
+
+.basic_card_view_more a {
+    padding: 25px;
+    font-size: 15pt;
+}
+
+/* Connection Request Entry */
+
+.connection_request_entry > * {
+    display: inline-block;
+    height: inherit; 
+    vertical-align: middle;
+    line-height: 35px;
+    margin: 0px 3px 0px;
+}
+
+.connection_request_entry {
+    font-size: 14pt;
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px;
+}
+
+.connection_request_entry p {
+    width: 122px;
+    overflow:  hidden;
+}
+
+.connection_request_entry img {
+    height: inherit; 
+    border-radius: 50%;
+}
+
+.connection_request_entry div img {
+    height: 29px;
+    margin-top: 3px;
+}
+
+/* Current Connections Entry */
+
+.current_connection_entry > * {
+    display: inline-block;
+    height: inherit; 
+    vertical-align: middle;
+    line-height: 35px;
+    margin: 0px 3px 0px;
+}
+
+.current_connection_entry {
+    font-size: 14pt;
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px;
+}
+
+.current_connection_entry p {
+    width: 170px;
+    overflow:  hidden;
+}
+
+.current_connection_entry img {
+    border-radius: 50%;
+}
+
+.education_entry {
+    margin-bottom: 15px;
+}
+
+.education_entry p:first-child {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.education_entry p:nth-child(2) {
+    font-size: 16pt;
+    color: #777777;
+}
+
+.education_entry p:last-child {
+    font-size: 14pt;
+}
+
+.icon, .btn {
+    cursor: pointer;
+}
+
+.current_connection .basic_card_content_container {
+    border: 1px solid red;
+}

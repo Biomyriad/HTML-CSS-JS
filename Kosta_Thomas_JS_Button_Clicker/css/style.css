@@ -1,0 +1,218 @@
+/* 
+CSS Table of contents
+-------------------------
+
+
+1 Vars
+2 Page Container
+3 Nav
+4 Content Container (Left & Right Columns)
+5 Definition Entry's (Left Column)
+6 "Add definition block" (Right Column)
+7 Add Definition Form (Right Column)
+
+- Templates
+8    Button(s)
+9    Definition Entry(s)
+
+*/
+
+
+/* Vars */
+:root {
+    --font-size-heading: 28px;
+    --font-size-subheading: 20px;
+    --font-size-standard: 16px;
+
+    --nav-height: 60px;
+    --page-container-width: 900px;
+    
+    --common-section-border: 3px solid black;
+    --std-padding: 15px;
+    --std-margin: 15px;
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+/* Page Container */
+.page-container {
+    width: var(--page-container-width);
+    margin: 0 auto;
+    font-size: var(--font-size-standard);
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    height: var(--nav-height);
+    width: inherit;
+    padding: var(--std-padding);
+}
+
+.nav p {
+    font-size: 34px;
+    font-weight: bold;
+    
+}
+
+.nav input {
+    border: var(--common-section-border);
+    width: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nav .std-button {
+    width: 90px;
+}
+
+/* Content Container */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.content > div {
+    flex: 2;
+
+}
+
+.content .column-right {
+    flex: 1;
+    margin-left: 35px;
+}
+
+.column-left :first-child {
+    margin-top: 0px;
+}
+
+/* Definition Entry's (Left Column) */
+
+
+
+/* Add definition block (Right Column)*/
+
+.add-definition-block {
+    border: 3px solid black;
+    font-size: var(--font-size-subheading);
+    padding: var(--std-padding);
+}
+
+.add-definition-block p {
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+
+.add-definition-block span {
+    font-weight: bold;
+}
+
+.add-definition-block button {
+    font-size: var(--font-size-subheading);
+    margin-left: 55px;
+    color: black;
+    background-color: #93c47d;
+}
+
+/* Add Definition Form */
+
+.add-definition-entry {
+    visibility: collapse;
+    border: var(--common-section-border);
+    margin-top: var(--std-margin);
+    padding: var(--std-padding)
+}
+
+.add-definition-entry * {
+    margin-bottom: 10px;
+    border: 1px solid darkgray;
+}
+
+.add-definition-entry form{
+    border: none;
+}
+
+.add-definition-entry p {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: var(--font-size-subheading);
+    text-align: center;
+}
+
+.add-definition-entry button {
+    margin-left: 60px;
+    margin-bottom: -5px;
+    color: black;
+    background-color: #93c47d;
+}
+
+/* Templates */
+
+    /* Buttons */
+.std-button {
+    color: white;
+    background-color: #2b78e4;
+    font-size: var(--font-size-subheading);
+    min-width: 40px;
+    min-height: 35px;    
+    padding: 4px 10px 5px 10px;
+    border: var(--common-section-border);
+    box-shadow: 4px 4px black;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Definition Entrys */
+
+.definition-entry {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-standard);
+    border: var(--common-section-border);
+    margin-top: var(--std-margin);
+    margin-bottom: var(--std-margin);
+    padding: var(--std-padding);
+}
+
+.definition-entry div:first-child {
+    margin-right: 30px;
+    min-width: 90px;
+    text-align: center;
+}
+
+.definition-entry .entry-word {
+    font-size: var(--font-size-heading);
+}
+
+.definition-entry .entry-word-class {
+    font-size: var(--font-size-subheading);
+}
+
+.definition-entry .entry-word-plural {
+    margin-top: 5px;
+    font-size: var(--font-size-standard);
+}
+
+.definition-entry .entry-word-plural span {
+    font-style: italic;
+}
+
+.definition-entry .entry-like-btn {
+    font-size: var(--font-size-standard);
+    color: black;
+    background-color: #ffd966;
+    margin-top: var(--std-margin);
+}
+
+.definition-entry .entry-word-definition {
+    font-size: var(--font-size-subheading);
+}

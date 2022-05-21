@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas's Portfolio</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Thomas Kosta</h1>
+    <img src="./images/me.jpg" alt="profile picture">
+    <div>
+        <img src="./images/github.PNG" alt="github link">
+        <a href="https://github.com/Biomyriad">my github</a>
+        <img src="./images/linkedin.PNG" alt="linkedin link">
+        <a href="https://www.linkedin.com/in/thomas-kosta-900288122">my linkedin</a>
+        <img src="./images/email.PNG" alt="email link">
+        <a href="mailto:biomyriad@gmail.com">my email</a>
+    </div>
+
+    <h3>Introduction</h3>
+    <p>
+        My name is Thomas Kosta and I have worked with tech since I was a kid. 
+        I design hardware and write firmware along with programming utility apps in many different languages. 
+        I have some apps that I have written being used by at least one company.
+    </p>
+
+    <h3>Notable Apps</h3>
+    <ul>
+        <li><b>PatrolTracker</b> - GPS based tracking system that generates map data and a html report of all properties visited with time in/out.</li>
+        <li><b>AirtableEmailedReports</b> - An app that will generate automatic daily email reports (using html formatting) from records in an online DB(ish) </li>
+    </ul>
+    
+    <table>
+        <caption><b>Technologies</b></caption>
+        <tr>
+            <th>Front-End</th>
+            <th>Compiled</th>
+            <th>Bare-Metal</th>
+            <th>Script</th>
+            <th>DataBase</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>C#</td>
+            <td>ASM X86</td>
+            <td>JavaScript</td>
+            <td>SQL</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>C++</td>
+            <td>ASM Pic/Atmel</td>
+            <td>Lua</td>
+            <td>MySQL</td>
+        </tr>
+        <tr>
+            <td>XAML</td>
+            <td>~Java</td>
+            <td>I8085 op Code</td>
+            <td>basic</td>
+            <td>Airtable(API)</td>
+        </tr>
+    </table>
+    <b>* And many others</b>
+    <h2>Contact Me</h2>
+    <div>
+        <label for="first_name">Name:</label>
+        <input type="text" name="first_name">
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" cols="20" rows="3"></textarea>
+    </div>
+    <input type="submit" value="Send Message" >
+</body>
+</html>

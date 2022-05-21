@@ -1,0 +1,189 @@
+/* 
+CSS Table of contents
+-------------------------
+Vars
+Page Container
+Nav
+Page Heading
+Cookie Notice
+Weather Card Container
+Weather Card 
+
+- Templates
+    Button(s)    
+*/
+
+
+/* Vars */
+:root {
+    --font-size-heading: 28px;
+    --font-size-subheading: 20px;
+    --font-size-standard: 16px;
+
+    --nav-height: 60px;
+    --page-container-width: 900px;
+    
+    --common-section-border: 3px solid black;
+    --test-border-red: 1px solid red;
+    --test-border-green: 1px solid #00ff00;
+
+    --std-padding: 15px;
+    --std-margin: 15px;
+}
+
+/* Page Container */
+
+.page-container {
+    width: var(--page-container-width);
+    margin: 0 auto;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    background-color: cornflowerblue;
+    height: 50px;
+    padding: var(--std-padding);
+    font-size: var(--font-size-heading);
+    font-weight: bold;
+}
+
+nav > p {
+    line-height: 20px;
+    margin-left: var(--std-margin);
+}
+
+nav .nav-cities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-subheading);
+}
+
+nav .nav-cities * {
+    margin-left: var(--std-margin);
+}
+
+/* Page Heading */
+
+.city-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+    line-height: 25px;
+    font-size: var(--font-size-subheading);
+    border-bottom: 2px solid black;
+    margin: var(--std-margin) 0;
+    padding:  var(--std-padding) 0;
+}
+
+.current-city {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#CF-temp-selection {
+    border: 1px solid black;
+}
+
+/* Cookie Notice */
+
+#cookie-notice {
+    position: fixed;
+    width: var(--page-container-width);
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: var(--common-section-border);
+    background-color: white;
+}
+
+#cookie-notice > * {
+    margin: var(--std-margin);
+}
+
+#cookie-notice div p:first-child {
+    font-weight: bold;
+    font-size: var(--font-size-subheading)
+}
+
+#accept-cookies {
+    font-size: var(--font-size-standard);
+    font-weight: bold;
+    width: 115px;
+}
+
+/* Weather Card Container */
+
+.weather-cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: var(--page-container-width);
+    margin-bottom: var(--std-margin);
+}
+
+.weather-cards-container > :first-child {
+    margin-left: 0;
+}
+
+/* Weather Card */
+
+.weather-card {
+    flex: 1;
+    background-color: lightgray;
+    margin-left: var(--std-margin);
+    padding: var(--std-padding);
+    text-align: center;
+}
+
+.weather-card > p:first-child {
+    font-size: var(--font-size-subheading);
+    font-weight: bold;
+}
+
+.weather-card img {
+    border-radius: 50%;
+    width: 125px;
+    margin: 10px 20px;
+}
+
+.weather-card div p {
+    display: inline-block;
+}
+
+.weather-card div {
+
+    color: blue;
+    font-weight: bold;
+    font-size: var(--font-size-subheading);
+    margin-top: var(--std-margin);
+}
+
+.weather-card div p:first-child {
+    margin-right: 75px;
+    color: red;
+}
+
+/**** Templates *****/
+
+/* Standard Button */
+.std-button {
+    color: white;
+    background-color: #2b78e4;
+    font-size: var(--font-size-subheading);
+    min-width: 40px;
+    min-height: 25px;    
+    padding: 4px 10px 5px 10px;
+    border: var(--common-section-border);
+    box-shadow: 4px 4px black;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

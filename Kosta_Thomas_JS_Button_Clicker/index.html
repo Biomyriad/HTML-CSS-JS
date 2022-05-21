@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/resets.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <div class="page-container">
+
+        <div class="nav">
+            <p>Dojonary</p>
+            <input type="text" name="search" id="search" placeholder="Search">
+            <button id="login" class="std-button" type="button">Login</button>
+        </div>
+
+        <div class="content">
+
+            <div id="definitions-column" class="column-left">
+
+                <div class="definition-entry">
+                    <div>
+                        <p class="entry-word">ninja</p>
+                        <p class="entry-word-class">noun</p>
+                        <p class="entry-word-plural">Plural: <span>ninjas</span></p>
+                        <button class="std-button entry-like-btn" type="button"><span>13</span> Likes</button>
+                    </div>
+                    <div>
+                        <p class="entry-word-definition">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+
+                <div class="definition-entry">
+                    <div>
+                        <p class="entry-word">ninja</p>
+                        <p class="entry-word-class">noun</p>
+                        <p class="entry-word-plural">Plural: <span>ninjas</span></p>
+                        <button class="std-button entry-like-btn" type="button"><span>37</span> Likes</button>
+                    </div>
+                    <div>
+                        <p class="entry-word-definition">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-right">
+
+                <div id="abc" class="add-definition-block">
+                    <p>Dojonary is defined by <span>YOU</span></p>
+                    <button id="add-definition-btn" class="std-button" type="button">Add Definition</button>
+                </div>
+
+                <div id="definition-entry-form" class="add-definition-entry">
+                    <p>Definition details</p>
+                    <form>
+                        <input type="text" name="word" id="word" placeholder="The word being defined">
+                        <select name="word-class" id="word-class">
+                            <option value="none">Select word class</option>
+                            <option value="noun">Noun</option>
+                            <option value="pronoun">Pronoun</option>
+                            <option value="verb">Verb</option>
+                            <option value="adverb">Adverb</option>
+                            <option value="preposition">Preposition</option>
+                            <option value="conjunction">Conjunction</option>
+                            <option value="article">Article</option>
+                        </select>
+                        <input type="text" name="plural" id="plural" placeholder="Plural form of the word">
+                        <textarea name="word-definition" id="word-definition" cols="30" rows="5" placeholder="Define the words definition"></textarea>
+                        <button id="form-submit" class="std-button" type="button">Submit Entry</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
